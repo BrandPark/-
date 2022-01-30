@@ -18,4 +18,5 @@
   - [VLAN](network/VLAN.md)
   - [CSMA/CD](network/CSMA_CD.md)
   - [BUM(Broadcast, Unknown unicast, Multicast)](network/BUM.md)
+  - [DHCP](network/DHCP.md)
 
