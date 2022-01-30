@@ -1,8 +1,12 @@
 # VLAN
 
-`VLAN(Virtual LAN)`이란, 여러 개의 물리적 LAN에 걸쳐서 존재할 수 있는 **Broadcast Domain을 나누는 것**입니다. 
+`VLAN(Virtual LAN)`이란, 여러 개의 물리적 LAN에 걸쳐서 존재할 수 있는 **Broadcast Domain을 논리적으로 나누는 것**입니다. 
 
 쉽게 설명하자면, 물리적 스위치 한 대를 논리적으로 나누어서 여러 대의 스위치처럼 사용하는 기술입니다. 
+
+> 물리적으로 Broadcast Domain을 나누려면 어떻게 해야할까?
+
+Broadcast Domain을 나누기 위해서는 3계층 장비인 라우터를 사용하면 됩니다. 라우터는 브로드캐스트 프레임을 전파하지 않고 프레임을 Decapsulate하여 3계층 정보에 따라 행동합니다.
 
 ## 왜 필요할까?
 
