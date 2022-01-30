@@ -2,8 +2,6 @@
 
 `VLAN(Virtual LAN)`이란, 여러 개의 물리적 LAN에 걸쳐서 존재할 수 있는 **Broadcast Domain을 논리적으로 나누는 것**입니다. 
 
-쉽게 설명하자면, 물리적 스위치 한 대를 논리적으로 나누어서 여러 대의 스위치처럼 사용하는 기술입니다. 
-
 > 물리적으로 Broadcast Domain을 나누려면 어떻게 해야할까?
 
 Broadcast Domain을 나누기 위해서는 3계층 장비인 라우터를 사용하면 됩니다. 라우터는 브로드캐스트 프레임을 전파하지 않고 프레임을 Decapsulate하여 3계층 정보에 따라 행동합니다.
@@ -19,8 +17,44 @@ Broadcast Domain을 나누기 위해서는 3계층 장비인 라우터를 사용
 - 기존 구성도에서 물리적으로는 크게 변화를 주지 않고도 네트워크의 구조를 변경할 수 있다.
 - 한 대의 스위치를 통해 네트워크를 그룹화시킬 수 있다. (ex. 층별 그룹, 부서별 그룹)
 
-![image](https://user-images.githubusercontent.com/53790137/151662211-4f421ab5-fe26-4f3b-a9e8-453548ebfe2a.png)
+![image](https://user-images.githubusercontent.com/53790137/151685518-7c1ab82b-0399-48b6-95ae-9b330599ac74.png)
 
-위 그림처럼 4개의 VLAN을 설정함으로써 한 대의 스위치에서 4개의 Broadcast Domain로 나눌 수 있습니다.
+하나의 스위치로 VLAN1과 VLAN2로 나누었습니다. Broadcast를 서버와 클라이언트로 나누면서 보안도 강화하고 트래픽도 줄이는 효과를 얻을 수 있습니다.
 
-하나의 스위치에서 만들어졌더라도 VLAN들은 서로 별개의 네트워크를 형성합니다. 
+## 어떻게 가능할까?
+
+스위치에 추가적인 설정을 통해 포트별로 VLAN을 나눌 수 있습니다. 포트에 브로드캐스트 프레임이 들어오면 해당 포트의 VLAN에 속하는 모든 포트에게 프레임을 복사하여 전송합니다. 
+
+## VLAN 확장하기
+
+스위치는 연결된 모든 링크에 브로드캐스트를 전파하기 때문에 스위치끼리 연결을 하면 Broadcast Domain이 확장되는 효과가 있습니다.
+
+위의 그림에서는 Server가 4대 클라이언트가 3대이지만 실제로 Server를 수백 대로 늘려야한다면 Broadcast Domain을 확장해야 할 것입니다.
+
+VLAN을 사용하면서도 브로드캐스트 도메인을 확장하는 것이 가능합니다.
+
+![image](https://user-images.githubusercontent.com/53790137/151685850-7f0d776d-29ed-4d99-a187-e2d591fde0c9.png)
+
+**하지만, VLAN 하나당 스위치와의 물리적 케이블이 필요**합니다.  
+
+만약 10개의 VLAN이 있다면 두개의 스위치 간에 10개의 물리적 케이블이 필요하다는 의미입니다. 이러한 방식은 대규모로 적용할 수 없습니다. 
+
+# VLAN Trunking
+
+VLAN의 확장성 제한을 극복하기 위해 `VLAN Trunking` 이라는 이더넷 기술을 사용할 수 있습니다. 
+
+VLAN Trunking을 사용하면 **VLAN의 개수가 몇개이든 스위치 간에 하나의 링크만 생성**합니다. 
+
+동시에 **VLAN 별로 트래픽을 별도로 유지**하기 때문에 VLAN 1의 데이터가 VLAN2으로 이동하지 않고 그 반대의 경우도 마찬가지입니다. 
+
+![image](https://user-images.githubusercontent.com/53790137/151685994-f49fc4af-ddce-4d77-976a-cf8fef23d1e6.png)
+
+## 어떻게 가능할까?
+
+**Trunk라는 단일 링크를 사용하면서 어떻게 프레임이 VLAN별로 관리가 될까요?**
+
+Trunking 프로토콜은 이더넷 프레임에 **태그라는 헤더 정보를 추가**합니다. 이 행위를 `VLAN Tagging`이라 합니다.
+
+Switch2가 Switch1로부터 수신받은 프레임에는 VLAN tag가 들어있습니다. 
+
+태그에는 VLAN ID가 들어있기 때문에 Switch2는 이 정보를 기반으로 정확한 VLAN을 찾아서 데이터를 Flooding할 수 있습니다.
