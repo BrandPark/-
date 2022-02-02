@@ -19,6 +19,6 @@
   - [CSMA/CD](network/CSMA_CD.md)
   - [BUM(Broadcast, Unknown unicast, Multicast)](network/BUM.md)
   - [DHCP](network/DHCP.md)
-  - [TCP](network/TCP.md)
+  - [TCP](network/TCP_handshake.md)
 ### Architecture
   - [모놀리스](architecture/monolith.md)
