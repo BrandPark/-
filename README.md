@@ -20,5 +20,6 @@
   - [BUM(Broadcast, Unknown unicast, Multicast)](network/BUM.md)
   - [DHCP](network/DHCP.md)
   - [TCP와 UDP](network/TCP_handshake.md)
+  - [HTTPS(TLS/SSL)](network/HTTPS(SSL_TLS).md)
 ### Architecture
   - [모놀리스](architecture/monolith.md)
