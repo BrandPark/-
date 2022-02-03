@@ -11,6 +11,7 @@
 `블로그`에는 주로 해결한 문제나 TIL 을 작성하면서 깊이 있게 공부한 것을 올릴 계획 입니다.
 
 # Index
+
 ### Architecture
 - [Monolith](architecture/Monolith.md)
 ### Data Structure
