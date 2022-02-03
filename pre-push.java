@@ -42,8 +42,10 @@ public class Main {
 
     private static void updateReadme(LinkedHashMap<String, List<String>> filenamesByDirname) {
 
+        File tmp = null;
+
         try {
-            File tmp = new File(ROOT_PATH + "/README.md.tmp_" + new Random().nextInt(100));
+            tmp = new File(ROOT_PATH + "/README.md.tmp_" + new Random().nextInt(100));
             tmp.createNewFile();
 
             File readme = new File(ROOT_PATH + "/README.md");
@@ -51,11 +53,11 @@ public class Main {
             writeToTmp(filenamesByDirname, tmp, readme);
             copyTmpToReadme(tmp, readme);
 
-            tmp.delete();
-
         } catch (IOException e) {
             ps.println(">> Exception: Exception occurred while create README.md.tmp_xx");
             System.exit(1);
+        } finally {
+            tmp.delete();
         }
     }
 
@@ -117,7 +119,7 @@ public class Main {
             for(String filename : filenamesByDirname.get(dirname)) {
 
                 String link = dirname + "/" + filename;
-                String indexName = convertToIndexName(filename);
+                String indexName = convertToLinkName(filename);
                 String indexLine = String.format("- [%s](%s)", indexName, link);
 
                 bw.write(indexLine + "\n");
@@ -145,10 +147,16 @@ public class Main {
     }
 
     // ex) TCP_%_UDP -> TCP / UDP
-    private static String convertToIndexName(String filename) {
+    private static String convertToLinkName(String filename) {
 
-        return filename.replaceAll("_", " ")
-                .replaceAll("%", "/");
+        char[] cArr = filename.toCharArray();
+
+        for (int i = 0; i < cArr.length; i++) {
+            if(cArr[i] == '_') cArr[i] = ' ';
+            if(cArr[i] == '%') cArr[i] = '/';
+        }
+
+        return String.valueOf(cArr).replaceAll(".md", "");
     }
     
     // ex) directory_name -> Directory Name
