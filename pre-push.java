@@ -102,7 +102,7 @@ public class Main {
         }
 
         if (!isIndexTitle) {
-            bw.write("# Index" + "\n");
+            bw.write("# Index\n\n");
         }
 
         bw.flush();
