@@ -103,6 +103,8 @@ public class Main {
 
         if (!isIndexTitle) {
             bw.write("# Index\n\n");
+        } else {
+            bw.write("\n");
         }
 
         bw.flush();

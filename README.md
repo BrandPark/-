@@ -11,19 +11,18 @@
 `블로그`에는 주로 해결한 문제나 TIL 을 작성하면서 깊이 있게 공부한 것을 올릴 계획 입니다.
 
 # Index
-
 ### Architecture
-- [monolith.md](architecture/monolith.md)
+- [Monolith](architecture/Monolith.md)
 ### Data Structure
-- [기본 자료구조.md](data_structure/기본_자료구조.md)
+- [기본 자료구조](data_structure/기본_자료구조.md)
 ### Network
-- [ARP(Address Resolution Protocol).md](network/ARP(Address_Resolution_Protocol).md)
-- [BUM.md](network/BUM.md)
-- [Collision Domain & Broadcast Domain.md](network/Collision_Domain_&_Broadcast_Domain.md)
-- [CSMA CD.md](network/CSMA_CD.md)
-- [DHCP.md](network/DHCP.md)
-- [HTTPS(SSL TLS).md](network/HTTPS(SSL_TLS).md)
-- [Switch&Hub.md](network/Switch&Hub.md)
-- [TCP IP Model.md](network/TCP_IP_Model.md)
-- [TCP UDP.md](network/TCP_UDP.md)
-- [VLAN.md](network/VLAN.md)
+- [ARP(Address Resolution Protocol)](network/ARP(Address_Resolution_Protocol).md)
+- [BUM](network/BUM.md)
+- [Collision Domain & Broadcast Domain](network/Collision_Domain_&_Broadcast_Domain.md)
+- [CSMA CD](network/CSMA_CD.md)
+- [DHCP](network/DHCP.md)
+- [HTTPS(SSL/TLS)](network/HTTPS(SSL%TLS).md)
+- [Switch&Hub](network/Switch&Hub.md)
+- [TCP/IP Model](network/TCP%IP_Model.md)
+- [TCP/UDP](network/TCP%UDP.md)
+- [VLAN](network/VLAN.md)
