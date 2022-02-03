@@ -7,19 +7,18 @@
 혼자 보기 위해 만들었지만 마음에 드는 것은 블로그에도 올릴 계획이기 때문에 대충 작성하지 않았습니다.
 
 # Index
-
-### Data Structure
-  - [기본 자료구조(배열, 리스트, 큐, 트리, 힙, 해쉬 테이블)](data_structure/기본_자료구조.md)
-### Network
-  - [ARP(Address Resolution Protocol)](network/ARP(Address_Resolution_Protocol).md)
-  - [Collision Domain과 Broadcast Domain](network/Collision_Domain_&_Broadcast_Domain.md)
-  - [스위치와 허브](network/Switch&Hub.md)
-  - [TCP/IP Model](network/TCP_IP_Model.md)
-  - [VLAN](network/VLAN.md)
-  - [CSMA/CD](network/CSMA_CD.md)
-  - [BUM(Broadcast, Unknown unicast, Multicast)](network/BUM.md)
-  - [DHCP](network/DHCP.md)
-  - [TCP와 UDP](network/TCP_handshake.md)
-  - [HTTPS(TLS/SSL)](network/HTTPS(SSL_TLS).md)
 ### Architecture
-  - [모놀리스](architecture/monolith.md)
+- [monolith.md](architecture/monolith.md)
+### Data Structure
+- [기본 자료구조.md](data_structure/기본_자료구조.md)
+### Network
+- [ARP(Address Resolution Protocol).md](network/ARP(Address_Resolution_Protocol).md)
+- [BUM.md](network/BUM.md)
+- [Collision Domain & Broadcast Domain.md](network/Collision_Domain_&_Broadcast_Domain.md)
+- [CSMA CD.md](network/CSMA_CD.md)
+- [DHCP.md](network/DHCP.md)
+- [HTTPS(SSL TLS).md](network/HTTPS(SSL_TLS).md)
+- [Switch&Hub.md](network/Switch&Hub.md)
+- [TCP IP Model.md](network/TCP_IP_Model.md)
+- [TCP UDP.md](network/TCP_UDP.md)
+- [VLAN.md](network/VLAN.md)
