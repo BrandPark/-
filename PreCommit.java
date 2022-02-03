@@ -2,7 +2,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class Main {
+public class PrePush {
 
     private static final String ROOT_PATH = new File("").getAbsolutePath();
     private static final File ROOT_DIR = new File(ROOT_PATH);
@@ -13,7 +13,7 @@ public class Main {
 
         LinkedHashMap<String, List<String>> filenamesByDirname = new LinkedHashMap<>();
         
-        ps.println("ROOT PATH: " + ROOT_PATH);
+        ps.println("\n\nROOT PATH: " + ROOT_PATH);
         ps.println(">> Search Directories");
 
         storeFilenamesByDirname(filenamesByDirname);
