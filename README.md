@@ -14,6 +14,7 @@
 
 ### Architecture
 - [Monolith](architecture/Monolith.md)
+- [MSA](architecture/MSA.md)
 ### Data Structure
 - [기본 자료구조](data_structure/기본_자료구조.md)
 ### Network

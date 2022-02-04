@@ -6,7 +6,7 @@ public class PreCommit {
 
     private static final String ROOT_PATH = new File("").getAbsolutePath();
     private static final File ROOT_DIR = new File(ROOT_PATH);
-    private static final List<String> EXCLUDE_DIR_LIST = new ArrayList<>(List.of(".git", ".idea", "out", "src"));
+    private static final List<String> EXCLUDE_DIR_LIST = new ArrayList<>(List.of(".git", ".idea", "out", "src", "images"));
     private static final PrintStream ps = new PrintStream(System.out, true, StandardCharsets.UTF_8);
     
     public static void main(String[] args) {
