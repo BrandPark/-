@@ -2,7 +2,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class PrePush {
+public class PreCommit {
 
     private static final String ROOT_PATH = new File("").getAbsolutePath();
     private static final File ROOT_DIR = new File(ROOT_PATH);
@@ -89,29 +89,27 @@ public class PrePush {
     private static void writeBeforeIndex(BufferedReader br, BufferedWriter bw) throws IOException{
 
         String line = null;
-        boolean isIndexTitle = false;
 
         while((line = br.readLine()) != null) {
 
-            bw.write(line + "\n");
-
-            if (line.equals("# Index")) {
-                isIndexTitle = true;
+            if (line.equals("{Index}") || line.equals("# Index")) {
                 break;
             }
-        }
-
-        if (!isIndexTitle) {
-            bw.write("# Index\n\n");
-        } else {
-            bw.write("\n");
+			
+			bw.write(line + "\n");
         }
 
         bw.flush();
     }
 
     private static void writeIndex(LinkedHashMap<String, List<String>> filenamesByDirname, BufferedWriter bw) throws IOException {
-
+		
+		if	(filenamesByDirname.isEmpty()) {
+			return;
+		}
+		
+		bw.write("# Index\n\n");
+		
         for (String dirname : filenamesByDirname.keySet()) {
 
             String category = String.format("### %s", convertToCategoryName(dirname));
@@ -155,7 +153,7 @@ public class PrePush {
 
         for (int i = 0; i < cArr.length; i++) {
             if(cArr[i] == '_') cArr[i] = ' ';
-            if(cArr[i] == '%') cArr[i] = '/';
+            if(cArr[i] == '-') cArr[i] = '/';
         }
 
         return String.valueOf(cArr).replaceAll(".md", "");
