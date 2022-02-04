@@ -51,3 +51,8 @@ Half-Duplex 방식이기 때문에 한 포트에서 양방향은 동시에 불�
 `스위치`의 모든 포트는 `Full-Duplex`로 동작합니다. 또한 이더넷 헤더(2계층 헤더)를 읽어서 보내기 때문에 Collision이 발생하지 않습니다. 
 
 (이해가 잘 되지 않는다면 다음 글을 참고하시기 바랍니다. [링크](https://community.cisco.com/t5/routing/does-collision-exists-in-switches/td-p/2603901))
+
+## 참고
+- [Simplex, Full-Duplex and Half-Duplex Operation](http://www.tcpipguide.com/free/t_SimplexFullDuplexandHalfDuplexOperation-2.htm)
+- [Does collision exists in Swiches?](https://community.cisco.com/t5/routing/does-collision-exists-in-switches/td-p/2603901)
+- [어째서 스위칭 허브나 스위치를 쓰면 모든 단말이 대역폭을 최대로 사용할 수 있을까요?](https://gigglehd.com/gg/hard/2651795)
