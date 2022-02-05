@@ -13,6 +13,7 @@
 # Index
 
 ### Architecture
+- [Circuit Breaker](architecture/Circuit_Breaker.md)
 - [Monolith](architecture/Monolith.md)
 - [MSA](architecture/MSA.md)
 ### Data Structure
