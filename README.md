@@ -21,7 +21,8 @@
 ### Data Structure
 - [기본 자료구조](data_structure/기본_자료구조.md)
 ### Git
-- [Branch](git/Branch.md)
+- [Branch & HEAD](git/Branch_&_HEAD.md)
+- [Merge](git/Merge.md)
 - [Snapshot](git/Snapshot.md)
 ### Network
 - [ARP(Address Resolution Protocol)](network/ARP(Address_Resolution_Protocol).md)
