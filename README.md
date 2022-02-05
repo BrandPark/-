@@ -16,10 +16,12 @@
 - [Circuit Breaker](architecture/Circuit_Breaker.md)
 - [Monolith](architecture/Monolith.md)
 - [MSA](architecture/MSA.md)
+### Database
+- [NoSQL](database/NoSQL.md)
 ### Data Structure
 - [기본 자료구조](data_structure/기본_자료구조.md)
-### Db
-- [NoSQL](db/NoSQL.md)
+### Git
+- [Snapshot](git/Snapshot.md)
 ### Network
 - [ARP(Address Resolution Protocol)](network/ARP(Address_Resolution_Protocol).md)
 - [BUM](network/BUM.md)
