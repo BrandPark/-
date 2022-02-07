@@ -17,6 +17,7 @@
 - [Client-side Load-Balancing](architecture/Client-side_Load-Balancing.md)
 - [Monolith](architecture/Monolith.md)
 - [MSA](architecture/MSA.md)
+- [Service Registry](architecture/Service_Registry.md)
 ### Database
 - [NoSQL](database/NoSQL.md)
 ### Data Structure
