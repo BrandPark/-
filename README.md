@@ -14,6 +14,7 @@
 
 ### Architecture
 - [Circuit Breaker](architecture/Circuit_Breaker.md)
+- [Client-side Load-Balancing](architecture/Client-side_Load-Balancing.md)
 - [Monolith](architecture/Monolith.md)
 - [MSA](architecture/MSA.md)
 ### Database
@@ -32,10 +33,10 @@
 - [Collision Domain & Broadcast Domain](network/Collision_Domain_&_Broadcast_Domain.md)
 - [CSMA CD](network/CSMA_CD.md)
 - [DHCP](network/DHCP.md)
-- [HTTPS(SSL/TLS)](network/HTTPS(SSL-TLS).md)
+- [HTTPS(SSL/TLS)](network/HTTPS(SSL$TLS).md)
 - [Switch&Hub](network/Switch&Hub.md)
-- [TCP/IP Model](network/TCP-IP_Model.md)
-- [TCP/UDP](network/TCP-UDP.md)
+- [TCP/IP Model](network/TCP$IP_Model.md)
+- [TCP/UDP](network/TCP$UDP.md)
 - [VLAN](network/VLAN.md)
 ### Web
 - [REST](web/REST.md)

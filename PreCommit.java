@@ -8,7 +8,12 @@ public class PreCommit {
     private static final File ROOT_DIR = new File(ROOT_PATH);
     private static final List<String> EXCLUDE_DIR_LIST = new ArrayList<>(List.of(".git", ".idea", "out", "src", "images"));
     private static final PrintStream ps = new PrintStream(System.out, true, StandardCharsets.UTF_8);
-    
+	private static final Map<Character, Character> convertCharacterMapForLink = new HashMap<>();
+	static {
+		convertCharacterMapForLink.put('$', '/');
+		convertCharacterMapForLink.put('_', ' ');	
+	}
+	
     public static void main(String[] args) {
 
         LinkedHashMap<String, List<String>> filenamesByDirname = new LinkedHashMap<>();
@@ -151,12 +156,20 @@ public class PreCommit {
 
         char[] cArr = filename.toCharArray();
 
+		
         for (int i = 0; i < cArr.length; i++) {
-            if(cArr[i] == '_') cArr[i] = ' ';
-            if(cArr[i] == '-') cArr[i] = '/';
+			if(convertCharacterMapForLink.containsKey(cArr[i])) {
+				cArr[i] = convertCharacterMapForLink.get(cArr[i]);
+			}
         }
+		
+		String ret = String.valueOf(cArr);
+		
+		if(ret.toLowerCase().endsWith(".md")) {
+			ret = ret.substring(0, ret.length() - 3);
+		}
 
-        return String.valueOf(cArr).replaceAll(".md", "");
+        return ret;
     }
     
     // ex) directory_name -> Directory Name
