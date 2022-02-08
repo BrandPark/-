@@ -35,3 +35,7 @@ Gateway 역할을 수행하는 서버이며 프록시 서버의 위치에 따라
 
 **캐싱 기능을 통해 지리적으로 먼 거리의 서버의 응답을 빠르게 전달하는 역할과 로드 밸런서**로 사용됩니다.
 
+## 참고
+- [Forward Proxy vs. Reverse Proxy Servers](https://www.jscape.com/blog/bid/87783/forward-proxy-vs-reverse-proxy#:~:text=The%20Reverse%20Proxy,proxies%20on%20behalf%20of%20servers.)
+- [What is Reverse Proxy Server](https://www.imperva.com/learn/performance/reverse-proxy/)
+- [10분 테코톡](https://www.youtube.com/watch?v=YxwYhenZ3BE&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9CTech)
