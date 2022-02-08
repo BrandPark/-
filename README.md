@@ -35,6 +35,7 @@
 - [CSMA CD](network/CSMA_CD.md)
 - [DHCP](network/DHCP.md)
 - [HTTPS(SSL/TLS)](network/HTTPS(SSL$TLS).md)
+- [Network Proxy](network/Network_Proxy.md)
 - [Switch&Hub](network/Switch&Hub.md)
 - [TCP/IP Model](network/TCP$IP_Model.md)
 - [TCP/UDP](network/TCP$UDP.md)
