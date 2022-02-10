@@ -19,8 +19,9 @@
 - [MSA](architecture/MSA.md)
 - [Service Registry](architecture/Service_Registry.md)
 ### Database
+- [Lock(ft.MySQL 8.0)](database/Lock(ft.MySQL_8.0).md)
 - [NoSQL](database/NoSQL.md)
-- [Transaction Isolation Level](database/Transaction_Isolation_Level.md)
+- [Transaction Isolation Level(ft. MySQL)](database/Transaction_Isolation_Level(ft. MySQL).md)
 ### Data Structure
 - [기본 자료구조](data_structure/기본_자료구조.md)
 ### Git
