@@ -18,12 +18,12 @@
 - [Monolith](architecture/Monolith.md)
 - [MSA](architecture/MSA.md)
 - [Service Registry](architecture/Service_Registry.md)
+### Data Structure
+- [기본 자료구조](data structure/기본_자료구조.md)
 ### Database
 - [Lock(ft.MySQL 8.0)](database/Lock(ft.MySQL_8.0).md)
 - [NoSQL](database/NoSQL.md)
 - [Transaction Isolation Level(ft. MySQL)](database/Transaction_Isolation_Level(ft. MySQL).md)
-### Data Structure
-- [기본 자료구조](data_structure/기본_자료구조.md)
 ### Git
 - [Branch & HEAD](git/Branch_&_HEAD.md)
 - [Merge](git/Merge.md)
