@@ -23,7 +23,7 @@ MSA에서 서비스간의 내부 통신은 Client-side Load-Balancer를 이용�
 
 - API Gateway가 병목지점이 될 수 있습니다. 적절한 Scale-out이 필요하고 Auto-scaling과 같은 클라우드 서비스를 이용하면 편합니다.
 
-## Spring Cloud Juul
+## Spring Cloud Zuul
 
 - Netflix에서 제공하는 오픈 소스 API Gateway를 Spring Cloud에서 추상화한 모듈입니다.
 - Zuul에는 내부에 Hystrix(Circuit Breaker)와 Ribbon(Client-side LB), Eureka client(Service Discovery)가 있어서 Cloud Native하게 관리가 가능합니다.
