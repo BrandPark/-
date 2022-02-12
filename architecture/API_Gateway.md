@@ -6,6 +6,8 @@ MSA에서 서비스간의 내부 통신은 Client-side Load-Balancer를 이용�
 
 클라이언트는 API Gateway에 요청을 하고 API Gateway는 URL은 분석하여 적절한 서비스에 라우팅합니다.
 
+![image](https://user-images.githubusercontent.com/53790137/153696166-cdff1306-104b-4ad5-9a2a-edacefd2f4bf.png)
+
 **만약 사용하지 않는다면 다음과 같은 문제점이 있습니다.**
 - 사용자는 필요한 기능마다 다른 URL로 직접 서비스 서버에 요청해야 합니다. 이것은 보안 문제로도 연결이 됩니다.
 - 서비스마다 인증/인가 등 공통된 로직을 구현해야 하는 번거로움이 있습니다.
