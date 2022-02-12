@@ -13,6 +13,7 @@
 # Index
 
 ### Architecture
+- [API Gateway](architecture/API_Gateway.md)
 - [Circuit Breaker](architecture/Circuit_Breaker.md)
 - [Client-side Load-Balancing](architecture/Client-side_Load-Balancing.md)
 - [Monolith](architecture/Monolith.md)
