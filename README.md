@@ -44,4 +44,6 @@
 - [TCP/UDP](network/TCP$UDP.md)
 - [VLAN](network/VLAN.md)
 ### Web
+- [CSRF](web/CSRF.md)
 - [REST](web/REST.md)
+- [XSS](web/XSS.md)
