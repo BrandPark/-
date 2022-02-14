@@ -45,5 +45,7 @@
 - [VLAN](network/VLAN.md)
 ### Web
 - [CSRF](web/CSRF.md)
+- [JWT](web/JWT.md)
+- [Refresh Token](web/Refresh_Token.md)
 - [REST](web/REST.md)
 - [XSS](web/XSS.md)
