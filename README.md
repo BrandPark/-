@@ -31,6 +31,7 @@
 - [Snapshot](git/Snapshot.md)
 ### Java
 - [Class Loader](java/Class_Loader.md)
+- [JVM](java/JVM.md)
 ### Network
 - [ARP(Address Resolution Protocol)](network/ARP(Address_Resolution_Protocol).md)
 - [BUM](network/BUM.md)
@@ -44,6 +45,7 @@
 - [TCP/UDP](network/TCP$UDP.md)
 - [VLAN](network/VLAN.md)
 ### Spring
+- [SecurityContextHolder & Authentication](spring/SecurityContextHolder_&_Authentication.md)
 - [Spring](spring/Spring.md)
 - [Spring AOP](spring/Spring_AOP.md)
 - [Spring Bean](spring/Spring_Bean.md)
