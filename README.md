@@ -18,6 +18,7 @@
 - [Client-side Load-Balancing](architecture/Client-side_Load-Balancing.md)
 - [Monolith](architecture/Monolith.md)
 - [MSA](architecture/MSA.md)
+- [REST](architecture/REST.md)
 - [Service Registry](architecture/Service_Registry.md)
 ### Database
 - [Lock(ft. MySQL 8.0)](database/Lock(ft._MySQL_8.0).md)
@@ -49,10 +50,10 @@
 - [Spring MVC](spring/Spring_MVC.md)
 - [Spring Security](spring/Spring_Security.md)
 - [Spring Security Authentication](spring/Spring_Security_Authentication.md)
+- [Spring Transaction Propagation](spring/Spring_Transaction_Propagation.md)
 ### Web
 - [CSRF](web/CSRF.md)
 - [HTTPS(SSL/TLS)](web/HTTPS(SSL$TLS).md)
 - [JWT](web/JWT.md)
 - [Network Proxy](web/Network_Proxy.md)
-- [REST](web/REST.md)
 - [XSS](web/XSS.md)
