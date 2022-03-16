@@ -58,6 +58,7 @@
 ### Web
 - [CSRF](web/CSRF.md)
 - [HTTPS(SSL/TLS)](web/HTTPS(SSL$TLS).md)
+- [Http Method Idempotent & Safe](web/Http_Method_Idempotent_&_Safe.md)
 - [JWT](web/JWT.md)
 - [Network Proxy](web/Network_Proxy.md)
 - [XSS](web/XSS.md)
