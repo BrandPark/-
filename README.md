@@ -12,53 +12,59 @@
 
 # Index
 
-### Architecture
-- [API Gateway](architecture/API_Gateway.md)
-- [Circuit Breaker](architecture/Circuit_Breaker.md)
-- [Client-side Load-Balancing](architecture/Client-side_Load-Balancing.md)
-- [Monolith](architecture/Monolith.md)
-- [MSA](architecture/MSA.md)
-- [REST](architecture/REST.md)
-- [Service Registry](architecture/Service_Registry.md)
 ### Database
-- [Delete vs Truncate vs Drop](database/Delete_vs_Truncate_vs_Drop.md)
 - [Lock(ft. MySQL 8.0)](database/Lock(ft._MySQL_8.0).md)
 - [NoSQL](database/NoSQL.md)
+- [Delete vs Truncate vs Drop](database/Delete_vs_Truncate_vs_Drop.md)
 - [Transaction Isolation Level(ft. MySQL)](database/Transaction_Isolation_Level(ft._MySQL).md)
-### Datastructure
-- [기본 자료구조](datastructure/기본_자료구조.md)
-### Etc
-- [Docker](etc/Docker.md)
-### Git
-- [Branch & HEAD](git/Branch_&_HEAD.md)
-- [Merge](git/Merge.md)
-- [Snapshot](git/Snapshot.md)
-### Java
-- [Class Loader](java/Class_Loader.md)
-- [JVM](java/JVM.md)
-- [volatile](java/volatile.md)
+### Web
+- [Http Method Idempotent & Safe](web/Http_Method_Idempotent_&_Safe.md)
+- [JWT](web/JWT.md)
+- [Network Proxy](web/Network_Proxy.md)
+- [CSRF](web/CSRF.md)
+- [HTTPS(SSL/TLS)](web/HTTPS(SSL$TLS).md)
+- [XSS](web/XSS.md)
 ### Network
-- [ARP(Address Resolution Protocol)](network/ARP(Address_Resolution_Protocol).md)
-- [BUM](network/BUM.md)
-- [Collision Domain & Broadcast Domain](network/Collision_Domain_&_Broadcast_Domain.md)
 - [CSMA CD](network/CSMA_CD.md)
+- [ARP(Address Resolution Protocol)](network/ARP(Address_Resolution_Protocol).md)
+- [Collision Domain & Broadcast Domain](network/Collision_Domain_&_Broadcast_Domain.md)
 - [DHCP](network/DHCP.md)
+- [VLAN](network/VLAN.md)
 - [Switch&Hub](network/Switch&Hub.md)
 - [TCP/IP Model](network/TCP$IP_Model.md)
 - [TCP/UDP](network/TCP$UDP.md)
-- [VLAN](network/VLAN.md)
+- [BUM](network/BUM.md)
+### Etc
+- [Docker](etc/Docker.md)
+### Java
+- [JVM](java/JVM.md)
+- [volatile](java/volatile.md)
+- [Class Loader](java/Class_Loader.md)
+### Datastructure
+- [기본 자료구조](datastructure/기본_자료구조.md)
+### Architecture
+- [Circuit Breaker](architecture/Circuit_Breaker.md)
+- [MSA](architecture/MSA.md)
+- [API Gateway](architecture/API_Gateway.md)
+- [Service Registry](architecture/Service_Registry.md)
+- [Client-side Load-Balancing](architecture/Client-side_Load-Balancing.md)
+- [monolith](architecture/monolith.md)
+- [REST](architecture/REST.md)
+### Kafka
+- [Replication](kafka/Replication.md)
+- [Kafka basics](kafka/Kafka_basics.md)
+- [Segment](kafka/Segment.md)
+- [Controller](kafka/Controller.md)
+### Git
+- [Snapshot](git/Snapshot.md)
+- [Branch & HEAD](git/Branch_&_HEAD.md)
+- [Merge](git/Merge.md)
 ### Spring
 - [Spring](spring/Spring.md)
-- [Spring AOP](spring/Spring_AOP.md)
+- [Spring Transaction Propagation](spring/Spring_Transaction_Propagation.md)
 - [Spring Bean](spring/Spring_Bean.md)
 - [Spring MVC](spring/Spring_MVC.md)
 - [Spring Security](spring/Spring_Security.md)
 - [Spring Security Authentication](spring/Spring_Security_Authentication.md)
-- [Spring Transaction Propagation](spring/Spring_Transaction_Propagation.md)
-### Web
-- [CSRF](web/CSRF.md)
-- [HTTPS(SSL/TLS)](web/HTTPS(SSL$TLS).md)
-- [Http Method Idempotent & Safe](web/Http_Method_Idempotent_&_Safe.md)
-- [JWT](web/JWT.md)
-- [Network Proxy](web/Network_Proxy.md)
-- [XSS](web/XSS.md)
+- [Spring Webflux](spring/Spring_Webflux.md)
+- [Spring AOP](spring/Spring_AOP.md)
